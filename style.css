@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --clr-Cyan: hsl(179, 62%, 43%);
+    --clr-light-cyan: hsla(179, 62%, 43%, 0.5);
+    --clr-Bright-Yellow: hsl(71, 73%, 54%);
+    --clr-Light-Gray: hsl(204, 43%, 93%);
+    --clr-Grayish-Blue: hsl(218, 22%, 67%);
+    --clr-White: rgb(255, 255, 255);
+
+    --radius: 10px
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: var(--clr-Light-Gray);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width: 30rem;
+    background-color: var(--clr-White);
+    border-radius: var(--radius);
+    overflow: hidden;
+
+    box-shadow: 0px 10px 10px -5px;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.card-one {
+    grid-column: 1/3;
+    padding: 1.5rem;
+}
+
+.card-one-head {
+    color: var(--clr-Cyan);
+    margin-bottom: 1.5rem;
+}
+
+.card-one-info {
+    color: var(--clr-Bright-Yellow);
+    margin-bottom: .8rem;
+}
+
+.card-one-description {
+    color: var(--clr-Grayish-Blue);
+}
+
+.card-two {
+    background-color: var(--clr-Cyan);
+}
+
+.card-two {
+    color: white;
+    padding: 1.5rem;
+}
+
+.card-two .plan {
+    margin-bottom: 1rem;
+}
+
+.card-two .months {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.card-two .permission {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.card-two .signup {
+    border: none;
+    width: 100%;
+    padding: .6rem;
+    border-radius: 5px;
+    background-color: var(--clr-Bright-Yellow);
+    color: var(--clr-White);
+    font-weight: 700;
+}
+
+
+.card-three {
+    background-color: var(--clr-light-cyan);
+    padding: 1.5rem;
+}
+
+.card-three .question {
+    font-weight: 700;
+    color: var(--clr-White);
+    margin-bottom: 1.2rem;
+}
+
+.card-three .suggestion {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--clr-White);
+}
